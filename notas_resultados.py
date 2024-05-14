@@ -20,6 +20,9 @@ for objeto in dados:
     alunos_reprovados.append(objeto)
 
 alunos_aprovados.sort(key=lambda x: x["Nome"])
+alunos_recuperacao.sort(key=lambda x: x["Nome"])
+alunos_reprovados.sort(key=lambda x: x["Nome"])
+
 
 melhor_aluno = max(alunos_aprovados, key=lambda x: x["Nota"]);
 print(f'Melhor aluno: {melhor_aluno["Nome"]}')
